@@ -1,0 +1,114 @@
+html {
+    font-size: 13px;
+    font-family: monospace;
+    color: #212560;
+}
+
+#gameArea {
+    font-size: 1.6rem;
+    padding-top: 3rem;
+}
+
+.image-area, .stats{
+    min-height: 30vh;
+}
+
+.image-area {
+    background: repeating-linear-gradient(40deg, hsl(223, 62%, 59%) 0px, #19455c 60px);
+    border-radius: 0 0  3rem 3rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3rem;
+
+}
+
+h1{
+    margin-top: 0;
+    font-size: 2.4rem;
+}
+h3{
+    margin-top: 0;
+    font-size: 2rem;
+}
+
+.items {
+    font-size: 2rems;
+}
+
+button {
+    width: 8rem;
+    border: 2px solid #a1e0e4;
+    border-radius: 3rem;
+    padding: 1rem;
+    background: transparent;
+    cursor: pointer;
+}
+
+button:nth-child(2) {
+    border: 2px solid rgb(246, 142, 142);
+}
+
+.stats {
+    background-color:whitesmoke;
+    border: 2px solid #859ede;
+    border-radius: 3rem 3rem 0 0;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.space-y {
+    margin: 3rem 0;
+}
+
+img {
+    width: 100%;
+    border-radius: 3rem;
+}
+.fade {
+    animation-name: fade;
+    animation-duration: 3s;
+    animation-iteration-count:infinite ;
+    
+    
+   
+}
+
+@keyframes fade {
+    from {
+        opacity: 0.2;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@media all and (min-width: 600px) {
+    #gameArea {
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    .image-area, .stats {
+        min-height: 50vh;
+    }
+
+    .image-area{
+        border-radius: 0 3rem 3rem 0;
+        transform: translate(-3rem);
+        flex: 2;
+    }
+
+    .stats{
+        flex: 1;
+        border-radius: 3rem 0 0  3rem;
+        margin-left:3rem;
+        padding-right: 3rem;
+        
+    }
+}

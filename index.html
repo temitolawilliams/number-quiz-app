@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Number Quiz App</title>
+</head>
+<body>
+    <main id="gameArea">
+        <div class="stats">
+           <div id="statsContent">
+                <h3>
+                    Score: <span id="currentScore">0</span> / <span id="totalAvailable">20</span>
+                </h3>
+                <p class="items">
+                    <span id="number"></span> <span id="itemName"></span>
+                </p>
+                <div class="match-buttons">
+                    <button onclick="match()">&#10003;</button>
+                    <button onclick="unmatch()">&#10007;</button>
+                </div>
+           </div>
+
+        </div>
+        <div class="image-area">
+          <h3 id="message"> </h3>
+           
+               <div id="startScreen">
+                    <h1>Welcome to the <em>Number Quiz App Match</em> game...</h1>
+                    <em class="space-y">See the following instructions...</em>
+                    <p class="space-y">&#9654; Hit the Pass symbol if the number displayed matches number of items in image shown</p>
+                    <p class="space-y">&#9654; Hit the cross symbol if number displayed and total item in the image does not correspond</p>
+                    <p class="space-y">You have <span id="timeSetting">5</span> seconds to choose Answer</p>
+
+                    <button id="playButtton" onclick="play()">Play!</button>
+                </div>
+           
+            <div id="imageContainer"></div>
+        </div>
+
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
