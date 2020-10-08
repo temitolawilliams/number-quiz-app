@@ -84,10 +84,12 @@ const images = [
     let displayNumber = 0;
     let score = 0;
     let totalAvailabe = images.length;
-    let chosenButton = false;
+    let chosenButton = false,
+    startQuestion = 1;
     document.getElementById('statsContent').style.visibility = 'hidden';
     document.getElementById('currentScore').innerHTML = score;
-    document.getElementById('totalAvailable').innerHTML = totalAvailabe
+    document.getElementById('totalAvailable').innerHTML = totalAvailabe;
+    document.getElementById('endQuestion').innerHTML = totalAvailabe;
 
 
 
@@ -137,6 +139,8 @@ const images = [
         stopTimer()
         return
     }
+    
+    document.getElementById('startQuestion').innerHTML = startQuestion++;
      chosenButton =false;
      const randomNumber = Math.floor(Math.random() * images.length);
      randomImageName = images[randomNumber].image_name;

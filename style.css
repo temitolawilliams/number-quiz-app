@@ -12,6 +12,11 @@ html {
 .image-area, .stats{
     min-height: 30vh;
 }
+#questionNumbering{
+    margin-bottom: 100px;
+    font-size: 2rem;
+    font-weight: bold;
+}
 
 .image-area {
     background: repeating-linear-gradient(40deg, hsl(223, 62%, 59%) 0px, #19455c 60px);
